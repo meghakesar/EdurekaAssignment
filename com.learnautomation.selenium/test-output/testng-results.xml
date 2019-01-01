@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-01-01T10:01:19Z" name="Default suite" finished-at="2019-01-01T10:01:27Z" duration-ms="7881">
+    <groups>
+    </groups>
+    <test started-at="2019-01-01T10:01:19Z" name="Default test" finished-at="2019-01-01T10:01:27Z" duration-ms="7881">
+      <class name="com.edurekaPortal.tests.HomePageTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.edurekaPortal.tests.HomePageTests@21b2e768]" started-at="2019-01-01T10:01:19Z" name="setUp" finished-at="2019-01-01T10:01:26Z" duration-ms="7719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginToApplication(java.lang.String, java.lang.String)[pri:0, instance:com.edurekaPortal.tests.HomePageTests@21b2e768]" started-at="2019-01-01T10:01:26Z" name="verifyLoginToApplication" finished-at="2019-01-01T10:01:26Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'megha.kesar@gmail.com' is required by @Test on method verifyLoginToApplication but has not been marked @Optional or defined
+in /private/var/folders/sg/jxkf91f971zdn3xw29q4f8r00000gn/T/testng-eclipse-1441412836/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'megha.kesar@gmail.com' is required by @Test on method verifyLoginToApplication but has not been marked @Optional or defined
+in /private/var/folders/sg/jxkf91f971zdn3xw29q4f8r00000gn/T/testng-eclipse-1441412836/testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginToApplication -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:com.edurekaPortal.tests.HomePageTests@21b2e768]" started-at="2019-01-01T10:01:26Z" name="cleanup" finished-at="2019-01-01T10:01:27Z" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- com.edurekaPortal.tests.HomePageTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

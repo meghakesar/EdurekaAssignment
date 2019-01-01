@@ -1,0 +1,16 @@
+package commonLibs.contracts;
+
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+
+public interface Dropdown {
+public void SelectViaVisibleText(WebElement element, String visibleText) throws Exception;
+public void SelectViaValue(WebElement element, String value) throws Exception;
+public void SelectViaIndex(WebElement element, int index) throws Exception;
+public boolean isMultiple(WebElement element) throws Exception;
+public List<WebElement> getAllOptions(WebElement element) throws Exception;
+public List<WebElement> getAllSelectedOptions (WebElement element) throws Exception;
+public WebElement getFirstSelectedOption(WebElement element) throws Exception;
+
+}
