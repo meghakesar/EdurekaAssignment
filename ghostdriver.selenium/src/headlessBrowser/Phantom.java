@@ -5,16 +5,17 @@ package headlessBrowser;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.commons.io.FileUtils;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
 
 import org.testng.annotations.Test;
+
+import library.Utility;
 
   public class Phantom {
 	  @Test
@@ -25,15 +26,16 @@ import org.testng.annotations.Test;
 		  WebDriver driver = new PhantomJSDriver();
 		  driver.manage().window().maximize();
 		  driver.get("https://www.google.com");
+		  Utility.captureScreenshot(driver, "BrowserStarted");
 		  WebElement element = driver.findElement(By.name("q"));
 		  element.sendKeys("edureka");
 		  element.submit();
+		  Utility.captureScreenshot(driver, "EnteredEdureka");
+
 		  
 		  System.out.println("title of the page is: "+driver.getTitle());
 		  
-		  File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		  FileUtils.copyFile(src, new File("./screenshot/edureka.png"),true); 
-		  System.out.println("Screenshot captured");
+		  
 		  driver.quit();
 		  }
 	
